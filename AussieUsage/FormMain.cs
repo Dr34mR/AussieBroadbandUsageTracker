@@ -170,6 +170,8 @@ namespace AussieUsage
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            MinimumSize = Size;
+            MaximumSize = Size;
             Icon = Resources.AussieUsage;
         }
     }
