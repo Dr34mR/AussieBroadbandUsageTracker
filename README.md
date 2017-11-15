@@ -6,3 +6,5 @@ Developed in C# using .NET
 Usage stats are retrieved from my.aussiebroadband.com.au
 
 Builds will be provided at a later date once MSI Installer is up and running.
+
+![Screenshot](Images/MainWindow.png?raw=true "Screenshot")
