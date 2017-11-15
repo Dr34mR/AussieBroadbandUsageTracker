@@ -167,5 +167,10 @@ namespace AussieUsage
             response.Dispose();
             return returnSuccess;
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            Icon = Resources.AussieUsage;
+        }
     }
 }

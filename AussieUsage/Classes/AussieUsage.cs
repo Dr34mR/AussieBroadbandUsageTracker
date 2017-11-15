@@ -52,9 +52,11 @@ namespace AussieUsage.Classes
 
             tempStr = xmlRetrieved["usage"]["allowance1_mb"].FirstChild.InnerText;
             long.TryParse(tempStr, out AllowanceMb1);
+            AllowanceMb1 = AllowanceMb1 * 1000000;
 
             tempStr = xmlRetrieved["usage"]["allowance2_mb"].FirstChild.InnerText;
             long.TryParse(tempStr, out AllowanceMb2);
+            AllowanceMb2 = AllowanceMb2 * 1000000;
         }
     }
 }
