@@ -5,4 +5,4 @@ Developed in C# using .NET
 
 Usage stats are retrieved from my.aussiebroadband.com.au
 
-(This is currently a placeholder project until first release)
+(This is currently a placeholder project until push of initial POC release)
