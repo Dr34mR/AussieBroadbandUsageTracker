@@ -1,15 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Globalization;
+using System.Linq;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using System.Web;
-using System.Xml;
 using System.Windows.Forms;
-using AussieBBUsage.Helpers;
-using AussieBBUsage.Properties;
+using System.Xml;
+using AussieUsage.Classes;
+using AussieUsage.Forms;
+using AussieUsage.Helpers;
+using AussieUsage.Properties;
 
-namespace AussieBBUsage.Forms
+namespace AussieUsage
 {
     public partial class FormMain : Form
     {
@@ -54,11 +62,11 @@ namespace AussieBBUsage.Forms
             xmlResponse.Dispose();
             xmlStream.Dispose();
 
-            var usage = new AussieUsage(xmlDoc);
+            var usage = new Classes.AussieUsage(xmlDoc);
             UpdateUsage(usage);
         }
 
-        private void UpdateUsage(AussieUsage usage)
+        private void UpdateUsage(Classes.AussieUsage usage)
         {
             txtDown.Text = $@"{usage.Down1:n0}";
             txtUp.Text = $@"{usage.Up1:n0}";
@@ -133,7 +141,7 @@ namespace AussieBBUsage.Forms
             var byteUser = ProtectedData.Unprotect(Settings.Default.UserCipherText, Settings.Default.UserEntropy, DataProtectionScope.CurrentUser);
             var bytePass = ProtectedData.Unprotect(Settings.Default.PassCipherText, Settings.Default.PassEntropy, DataProtectionScope.CurrentUser);
 
-            var loginRequest = (HttpWebRequest) WebRequest.Create(LoginUrl);
+            var loginRequest = (HttpWebRequest)WebRequest.Create(LoginUrl);
 
             var outgoingQueryString = HttpUtility.ParseQueryString(string.Empty);
             outgoingQueryString.Add("login_username", Encoding.UTF8.GetString(byteUser));
@@ -152,17 +160,12 @@ namespace AussieBBUsage.Forms
             loginRequest.UserAgent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
 
             using (var stream = loginRequest.GetRequestStream()) { stream.Write(postBytes, 0, postBytes.Length); }
-            var response = (HttpWebResponse) loginRequest.GetResponse();
+            var response = (HttpWebResponse)loginRequest.GetResponse();
 
             var returnSuccess = response.StatusCode == HttpStatusCode.OK;
 
             response.Dispose();
             return returnSuccess;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

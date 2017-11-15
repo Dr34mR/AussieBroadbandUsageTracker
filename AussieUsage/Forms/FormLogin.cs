@@ -4,12 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AussieBBUsage.Forms
+namespace AussieUsage.Forms
 {
     public partial class FormLogin : Form
     {

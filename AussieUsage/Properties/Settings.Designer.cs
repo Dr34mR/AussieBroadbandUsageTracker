@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AussieBBUsage.Properties {
+namespace AussieUsage.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,6 +25,7 @@ namespace AussieBBUsage.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public byte[] UserEntropy {
             get {
                 return ((byte[])(this["UserEntropy"]));
@@ -36,6 +37,7 @@ namespace AussieBBUsage.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public byte[] UserCipherText {
             get {
                 return ((byte[])(this["UserCipherText"]));

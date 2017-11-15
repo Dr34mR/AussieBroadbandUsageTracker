@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AussieBBUsage.Helpers
+namespace AussieUsage.Helpers
 {
     internal static class NumericalHelper
     {
@@ -12,7 +12,7 @@ namespace AussieBBUsage.Helpers
         {
             string suffix;
             var ones = number % 10;
-            var tens = (int) Math.Floor(number / 10M) % 10;
+            var tens = (int)Math.Floor(number / 10M) % 10;
 
             if (tens == 1) { suffix = "th"; }
             else

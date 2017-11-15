@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace AussieBBUsage
+namespace AussieUsage.Classes
 {
     public class AussieUsage
     {

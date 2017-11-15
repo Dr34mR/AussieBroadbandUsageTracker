@@ -1,4 +1,4 @@
-﻿namespace AussieBBUsage.Forms
+﻿namespace AussieUsage.Forms
 {
     partial class FormLogin
     {
@@ -39,17 +39,17 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(85, 12);
+            this.txtUsername.Location = new System.Drawing.Point(87, 12);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(85, 38);
+            this.txtPassword.Location = new System.Drawing.Point(87, 38);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 2;
             // 
             // lblUsername
             // 
@@ -57,7 +57,7 @@
             this.lblUsername.Location = new System.Drawing.Point(12, 15);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(55, 13);
-            this.lblUsername.TabIndex = 2;
+            this.lblUsername.TabIndex = 3;
             this.lblUsername.Text = "Username";
             // 
             // lblPassword
@@ -66,7 +66,7 @@
             this.lblPassword.Location = new System.Drawing.Point(12, 41);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
-            this.lblPassword.TabIndex = 3;
+            this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password";
             // 
             // btnLogin
@@ -74,7 +74,7 @@
             this.btnLogin.Location = new System.Drawing.Point(12, 64);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 2;
+            this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -82,10 +82,10 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(110, 64);
+            this.btnCancel.Location = new System.Drawing.Point(112, 64);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -96,15 +96,14 @@
             this.lblBorder.Location = new System.Drawing.Point(0, 2);
             this.lblBorder.Name = "lblBorder";
             this.lblBorder.Size = new System.Drawing.Size(38, 13);
-            this.lblBorder.TabIndex = 4;
+            this.lblBorder.TabIndex = 7;
             this.lblBorder.Text = "Border";
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(199, 97);
+            this.ClientSize = new System.Drawing.Size(199, 98);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblPassword);
@@ -113,11 +112,9 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblBorder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Login";
+            this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
