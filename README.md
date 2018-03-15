@@ -1,4 +1,4 @@
-## NB: I am no longer with AussieBroadband due to a move
+### NB: I am no longer with Aussie Broadband due to a house move - I will probably pick this up where I left off once I move again.
 
 # Aussie Broadband Usage Tracker
 Windows desktop application to display and track usage for AussieBroadband customers.
