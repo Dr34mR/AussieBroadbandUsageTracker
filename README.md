@@ -1,3 +1,5 @@
+## NB: I am no longer with AussieBroadband due to a move
+
 # Aussie Broadband Usage Tracker
 Windows desktop application to display and track usage for AussieBroadband customers.
 
